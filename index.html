@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MapleStory Character Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>MapleStory Character Search</h1>
+    <input type="text" id="characterName" placeholder="닉네임을 입력하세요">
+    <select id="searchType" style="font-size: 13x; padding: 8px;" onchange="changePlaceholder()">
+      <option value="name">닉네임</option>
+      <option value="ocid">OCID</option>
+    </select>
+    <button id="searchButton">검색</button>
+  </header>
+
+  <main>
+    <div id="characterInfo" class="hidden"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
